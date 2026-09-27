@@ -67,5 +67,3 @@ elif status == "married" :
 
     else : #if user enters 0 or a negative value
         print("Please enter a valid amount.")
-
-    
