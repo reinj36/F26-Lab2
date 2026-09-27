@@ -18,3 +18,4 @@ else :
         print(f"Hello user, good job, you provided two arguments!!")
     else :
         print(f"This script requires exactly two arguments. You provided {num_args} arguments!")
+        
