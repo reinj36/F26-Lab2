@@ -10,6 +10,7 @@
 # Creat variable pin. The value of pin should be a 4 digit code inputted by the user.
 # Add a while loop to create program that wont end until the user enters 1234.
 # Follow the specific instructions given in the README.md file.
+
 #guess = 5
 #number = int(input("Guess what number less than 10 I am thinking off?"))
 #while number != guess:  # loop condition 
@@ -17,3 +18,19 @@
 # number = int(input("Guess what number less than 10 I am thinking off?")) # keep taking input from user until the user enters the correct guess.
 #print("You got it right!") # this statement will be executed when loop has terminated which will only happen when the user enters the number 5.
 # Define the correct PIN
+
+
+#get user input and assign to pin
+pin = int(input("Please type in your PIN: "))
+
+#ask user to enter pin again
+print()
+userNum = int(input("Please type in your PIN: "))
+
+#iterate until user enters correct pin
+while(userNum != pin) :
+    print("\nIncorrect...try again")
+    userNum = int(input("Please type in your PIN: "))
+
+
+print("Correct PIN, you can enter!")
