@@ -1,8 +1,8 @@
 # Add comments before you do anything else.
 
 #!/usr/bin/env python3
-# Author:
-# Date:
+# Author: Reina James
+# Date: 27/9/2026
 # Purpose: Learn how to use while loops.
 # Usage: ./lab2h.py
 
