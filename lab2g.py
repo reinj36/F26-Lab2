@@ -32,7 +32,7 @@ tax = 0
 #get user input and assign to income and status
 income = int(input("Please enter your income: "))
 
-status = input("Please enter your status: ")
+status = input('Please enter your status ("single" or "married"): ')
 
 
 
