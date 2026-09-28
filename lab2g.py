@@ -13,10 +13,14 @@
 TAXRATE_SINGLE_ZERO = 0.1
 TAXRATE_SINGLE_8K = 0.15
 TAXRATE_SINGLE_32K = 0.25
+LIMIT_SINGLE_8K = 8000
+LIMIT_SINGLE_32K = 32000
 
 TAXRATE_MARRIED_ZERO = 0.1
 TAXRATE_MARRIED_16K = 0.15
 TAXRATE_MARRIED_64K = 0.25
+LIMIT_MARRIED_16K = 16000
+LIMIT_MARRIED_64K = 64000
 
 
 
@@ -36,15 +40,15 @@ status = input("Please enter your status: ")
 
 #calculate tax if SINGLE
 if status == "single" :
-    if income > 0 and income <= 8000 : #if income is between $0 and $8000, the tax is 10% of income
+    if income > 0 and income <= LIMIT_SINGLE_8K : #if income is between $0 and $8000, the tax is 10% of income
         tax = income * TAXRATE_SINGLE_ZERO
         print("Tax: $%.2f" %(tax))
 
-    elif income > 8000 and income <= 32000 : #if income is between $8000 and $32000, the tax is $800 + 15% of income
+    elif income > LIMIT_SINGLE_8K and income <= LIMIT_SINGLE_32K : #if income is between $8000 and $32000, the tax is $800 + 15% of income
         tax = 800 + (income * TAXRATE_SINGLE_8K)
         print("Tax: $%.2f" %(tax))
 
-    elif income > 32000 : #if income is over $32000, tax is $4400 + 25% of income
+    elif income > LIMIT_SINGLE_32K : #if income is over $32000, tax is $4400 + 25% of income
         tax = 4400 + (income * TAXRATE_SINGLE_32K)
         print("Tax: $%.2f" %(tax))
 
@@ -53,15 +57,15 @@ if status == "single" :
 
 #calculate tax if MARRIED
 elif status == "married" : 
-    if income > 0 and income <= 16000 : #if income is between $0 and $16k, tax is 10% of income
+    if income > 0 and income <= LIMIT_MARRIED_16K : #if income is between $0 and $16k, tax is 10% of income
         tax = income * TAXRATE_MARRIED_ZERO
         print("Tax: $%.2f" %(tax))
     
-    elif income > 16000 and income <= 64000 : #if income is between $16k and $64k, tax is $1600 + 15% of income
+    elif income > LIMIT_MARRIED_16K and income <= LIMIT_MARRIED_64K : #if income is between $16k and $64k, tax is $1600 + 15% of income
         tax = 1600 + (income * TAXRATE_MARRIED_16K)
         print("Tax: $%.2f" %(tax))
 
-    elif income > 64000 : #if income is over $64k, tax is $8800 + 25% of income
+    elif income > LIMIT_MARRIED_64K : #if income is over $64k, tax is $8800 + 25% of income
         tax = 8800 + (income * TAXRATE_MARRIED_64K)
         print("Tax: $%.2f" %(tax))
 
