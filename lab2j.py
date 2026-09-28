@@ -6,31 +6,32 @@
 # Purpose: Learn how to use while loops with break and continue.
 # Usage: ./lab2j.py
 
-# TO DO 1: 
-# Import the `math` module.
-# Define a variable named num. Prompt the user to input a number and assign it to the variable num.
-# Convert the user input to a floating-point number and assign it to num.
-
-# TO DO 2: 
-# Create an infinite loop using while True. Inside the loop:
-# Check if num is negative:
-# If it is, print "Invalid number." and continue to the next iteration of the loop.
-
-# TO DO 3: 
-# Check if num is zero:
-# If it is, print "Exiting..." and break out of the loop.
-
-# TO DO 4: 
-#Calculate the square root of num using the math.sqrt function.
-# TO DO 1: Import the `math` module.
-
-# TO DO 2: Create an infinite loop using while True.
-
-    # TO DO 3: Check if num is zero:
-   
-
-    # TO DO 4: Calculate the square root of num using the math.sqrt function.
-
 import math
+
+#get user input and convert to float
 num = input("Please type in a number: ")
 num = float(num)
+print()
+
+#initialize variable for square root of num to 0
+numSquareRooted = 0;
+
+#iterates until user enters 0
+while True :
+
+    #get user input and convert to float
+    num = float(input("Please type in a number: "))
+
+
+    if num == 0 : #break out of loop if user enters 0
+            print("Exiting...")
+            break
+    elif num < 0 : #continue to next iteration if user enters negative number
+        print("Invalid number.")
+        print()
+        continue
+    else : #calculate and print square root of num for all input above 0
+         numSquareRooted = math.sqrt(num)
+         print(numSquareRooted)
+
+    print() #extra space for formatting
