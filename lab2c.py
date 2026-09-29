@@ -23,10 +23,10 @@ str2 = input("Enter another sentence: ")
 # Get input from the user
 
 if (len(str1) > len(str2)) :
-    print ("str1 is longer than str2!")
+    print (f'"{str1}" is longer than "{str2}"!')
 elif (len(str2) > len(str1)) :
-    print("str2 is longer than str1!")
+    print(f'"{str2}" is longer than "{str1}"!')
 else :
-    "str1 and str2 are equal."
+    print(f'"{str1}" and "{str2}" are equal.')
 
 
