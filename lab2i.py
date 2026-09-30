@@ -19,18 +19,16 @@
 #print("You got it right!") # this statement will be executed when loop has terminated which will only happen when the user enters the number 5.
 # Define the correct PIN
 
+#initialize correctPin to 1234
+correctPin = 1234;
 
-#get user input and assign to pin
+#get user input
 pin = int(input("Please type in your PIN: "))
 
-#ask user to enter pin again
-print()
-userNum = int(input("Please type in your PIN: "))
-
 #iterate until user enters correct pin
-while(userNum != pin) :
-    print("\nIncorrect...try again")
-    userNum = int(input("Please type in your PIN: "))
+while(pin != correctPin) :
+    print("Incorrect...try again\n")
+    pin = int(input("Please type in your PIN: "))
 
-
+#execute when while loop terminates
 print("Correct PIN, you can enter!")
