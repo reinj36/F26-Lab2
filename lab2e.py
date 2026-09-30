@@ -11,11 +11,11 @@
 import sys
 num_args = len(sys.argv)-1 #excludes file name
 
-if num_args < 2 :
+if num_args < 2 : #if num of arguments is less than 2, print warning message
     print("This script requires exactly two arguments. No arguments were provided!")
-else :
-    if num_args == 2 :
+else : #if num of arguments is 2, print following message
+    if num_args == 2 : 
         print(f"Hello user, good job, you provided two arguments!!")
-    else :
+    else : #if num of arguments is more than 2, print warning message
         print(f"This script requires exactly two arguments. You provided {num_args} arguments!")
         
