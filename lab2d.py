@@ -21,7 +21,7 @@ print(len(sys.argv)) # tells us the number of command line arguments the user pr
 # TO DO 2: copy the required lines from README.md to print argv[0], argv[1] and argv[2]
 # run the script using the following command: python lab2d.py maija Maija
 
-print()
+#print()
 print(sys.argv[0]) # prints the first argument, it is always the name of script.
 print(sys.argv[1]) # prints the second argument .
 print(sys.argv[2]) # prints the third argument.
