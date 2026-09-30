@@ -9,15 +9,16 @@
 # TO DO 1: Follow the instructions given in README.md file
 
 import sys
-num_args = len(sys.argv) -1
+
+num_args = len(sys.argv) -1 #num_args = # of arguments - file name
                
-if num_args < 2 :
+if num_args < 2 : #print warning message if user enters less than 2 arguments
     print("The script requires at least 2 arguments.")
-else :
+else : #if user enters 2+ arguments, print name, age, and num_args in formatted message
     name = sys.argv[1]
     age = sys.argv[2]
 
-    if num_args == 3 :
+    if num_args == 3 : 
         print(f"Hi {name}, you are {age} years old and the script received {num_args} arguments.")
     else :
         print(f"Hi {name}, you are {age} years old and the script recieved {num_args} arguments.")
